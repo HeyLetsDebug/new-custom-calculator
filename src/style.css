@@ -1,0 +1,147 @@
+ body{
+    font-family: "arial";
+ }
+
+.calSec{
+    border-top: 2px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+.sectionTitle{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+        .footNoteEgog{font-size:10px;}
+
+        .calculatorDv{max-width: 300px;}
+  
+   .yesButton, .noButton {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background: #ffff;
+    margin: 2px;
+    border-radius: 52px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 54px;
+    border: solid 1px #ddd;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-weight: bold;
+        }
+        .yesNo_selected{
+            background: #83eb6a;
+    color: #444;
+        }
+
+.form-check p{
+ display: inline-block;
+ font-size: 14px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 32px;
+  margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: super;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+    border: solid 1px #bdc1c2;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #83eb6a;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*number increment css*/
+.incrementor{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    user-select: none; 
+}
+.incrementor:focus, .qty:focus{
+    outline: none;
+}
+
+.qty{
+      background-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: hotpink;
+    border-image: initial;
+    color: black;
+    text-align: center;
+    width: 55px;
+    font-size: 18px;
+    line-height: normal;
+    padding: 0px;
+    outline: none;
+}
+.qtyplus{
+    color: slateblue;
+    border: 1px solid slateblue;
+}
+.qtyminus{
+    color: hotpink;
+    border: 1px solid hotpink;
+}
+.qtyminus span {
+    vertical-align: super;
+    line-height: 3px !important;
+}
